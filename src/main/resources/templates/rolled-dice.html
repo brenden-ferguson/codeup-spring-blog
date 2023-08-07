@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Win/Loss</title>
+</head>
+<body>
+  <p>Your number was: <span th:text="${number}"></span></p>
+
+<div th:if="${isCorrect}">That was the Correct number</div>
+<div th:unless="${isCorrect}">The Correct number was <span th:text="${random}"></span></div>
+</body>
+</html>
